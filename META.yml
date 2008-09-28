@@ -19,9 +19,9 @@ no_index:
 requires:
   Cairo: 1.060
   Geometry::Primitive: 0.12
-  Graphics::Primitive: 0.32
+  Graphics::Primitive: 0.33
   Gtk2: 1.183
   IO::File: 0
   Math::Complex: 1.54
   Moose: 0.57
-version: 0.3
+version: 0.4

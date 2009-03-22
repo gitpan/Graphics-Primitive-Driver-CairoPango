@@ -24,4 +24,4 @@ requires:
   Math::Complex: 1.54
   Moose: 0.57
   Pango: 1.220
-version: 0.54
+version: 0.55

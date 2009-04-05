@@ -20,8 +20,9 @@ requires:
   Cairo: 1.060
   Geometry::Primitive: 0.12
   Graphics::Primitive: 0.35
+  Graphics::Primitive::Driver::Cairo: 0.34
   IO::File: 0
   Math::Complex: 1.54
   Moose: 0.57
   Pango: 1.220
-version: 0.55
+version: 0.56

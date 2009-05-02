@@ -17,12 +17,12 @@ no_index:
     - inc
     - t
 requires:
-  Cairo: 1.060
+  Cairo: 1.061
   Geometry::Primitive: 0.12
-  Graphics::Primitive: 0.35
-  Graphics::Primitive::Driver::Cairo: 0.34
+  Graphics::Primitive: 0.41
+  Graphics::Primitive::Driver::Cairo: 0.37
   IO::File: 0
-  Math::Complex: 1.54
-  Moose: 0.57
+  Math::Complex: 1.56
+  Moose: 0.76
   Pango: 1.220
-version: 0.56
+version: 0.57

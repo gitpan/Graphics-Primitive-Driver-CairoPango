@@ -21,13 +21,13 @@ no_index:
     - t
 requires:
   Cairo: 1.061
-  Geometry::Primitive: 0.12
-  Graphics::Primitive: 0.41
-  Graphics::Primitive::Driver::Cairo: 0.37
+  Geometry::Primitive: 0.13
+  Graphics::Primitive: 0.43
+  Graphics::Primitive::Driver::Cairo: 0.38
   IO::File: 0
   Math::Complex: 1.56
-  Moose: 0.76
+  Moose: 0.79
   Pango: 1.220
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.58
+version: 0.59

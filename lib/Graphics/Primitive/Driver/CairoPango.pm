@@ -16,15 +16,15 @@ extends 'Graphics::Primitive::Driver::Cairo';
 # with 'Graphics::Primitive::Driver';
 
 our $AUTHORITY = 'cpan:GPHAT';
-our $VERSION = '0.62';
+our $VERSION = '0.63';
 
-enum 'Graphics::Primitive::Driver::CairoPango::AntialiasModes' => (
+enum 'Graphics::Primitive::Driver::CairoPango::AntialiasModes' => [
     qw(default none gray subpixel)
-);
+];
 
-enum 'Graphics::Primitive::Driver::CairoPango::Format' => (
+enum 'Graphics::Primitive::Driver::CairoPango::Format' => [
     qw(PDF PS PNG SVG pdf ps png svg)
-);
+];
 
 sub _draw_textbox {
     my ($self, $comp) = @_;
@@ -99,9 +99,9 @@ sub _draw_textbox {
         } else {
             my ($ink, $log) = $layout->get_pixel_extents;
             if($comp->vertical_alignment eq 'bottom') {
-                $y += $bbox->height - $log->{height} / 2;
+                $y = $bbox->height - $log->{height} / 2;
             } elsif($comp->vertical_alignment eq 'center') {
-                $y += $bbox->height / 2 - $log->{height} / 2;
+                $y = $bbox->height / 2 - $log->{height} / 2;
             }
             $context->move_to($x, $y);
         }
